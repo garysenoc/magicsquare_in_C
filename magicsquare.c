@@ -4,8 +4,13 @@ int main(){
 	
 	int num=1,j,i,start=1,x=0,y;
 	
-	printf("Enter size of magic square (Only odd number): ");
+	here: printf("Enter size of magic square (Only odd number): ");
 	scanf("%d",&num);
+	
+	if(num%2==0){
+	printf("Only odd number");
+		goto here;
+	}
 	
 	int arr[num][num];
 	
